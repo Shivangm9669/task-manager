@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="app-heading">Smart Task Manager</div>
+      <ul>
+        <li>
+          <a href="#" class="nav-link" data-section="homescreen">Home</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link" data-section="mytask-screen">My Task</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link" data-section="report-screen">Report</a>
+        </li>
+        <li>
+          <a href="#" class="nav-link" data-section="profile-screen">Profile</a>
+        </li>
+      </ul>
+    </nav>
+    <section id="homescreen" class="section active">
+      <div class="search-section">
+        <h2> Add the Task</h2>
+        <form id="input-form">
+          <input type="text" id="task-input" placeholder="Enter the task..." />
+          <label for="priority-dropdown">Select the priority:</label>
+          <select id="priority-dropdown" name="priority-dropdown">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
+
+      <div class="taskList">
+        <ul id="ul">
+
+        </ul>
+      </div>
+
+    </section>
+    <section id="mytask-screen" class="section">
+        <div class="myscreen-heading">
+            <div class="taskList">
+                <h2>My All task</h2>
+                <ul id="report-items"></ul>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <section id="report-screen" class="section">
+        <div class="report-heading">
+            <div class="taskList">
+                <h2>My Completed Task</h2>
+                <ul id="completed-items">
+
+                </ul>
+            </div>
+
+            <div class="taskList">
+                <h2>Incompleted Task</h2>
+                <ul id="incompleted-items">
+                    
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="profile-screen" class="section">
+      <div class="profile-container">
+        <div class="profile-card">
+          <h2>My Profile</h2>
+          <div class="profile-info">
+            <div class="info-item">
+              <label>Name:</label>
+              <span id="profile-name">No name</span>
+            </div>
+            <div class="info-item">
+              <label>Email:</label>
+              <span id="profile-email">noname@mail.com</span>
+            </div>
+          </div>
+          <div class="task-statistics">
+            <div class="stat-item">
+              <h3>Completed Tasks</h3>
+              <span id="completed-count">0</span>
+            </div>
+            <div class="stat-item">
+              <h3>Pending Tasks</h3>
+              <span id="pending-count">0</span>
+            </div>
+          </div>
+          <button id="edit-profile" class="edit-button">Edit Profile</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content" id="about-section">
+          <div class="footer-section">
+              <h3>Quick Links</h3>
+              <ul class="foot-list">
+                  <li><a href="#" class="foot-links">Terms of Service</a></li>
+                  <li><a href="#" class="foot-links">Privacy Policy</a></li>
+                  <li><a href="#" class="foot-links">Shipping Info</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>Connect With Us</h3>
+              <div class="social-links">
+                  <a href="#">Facebook</a>
+                  <a href="#">Twitter</a>
+                  <a href="#">Instagram</a>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
